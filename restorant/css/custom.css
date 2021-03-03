@@ -1,0 +1,121 @@
+.search-box{
+	text-align: center;
+}
+.search-box #search-food{
+	padding: 15px;
+	width: 70%;
+	font-size: 20px;
+}
+
+/*.order-btn{
+	display: flex;
+}*/
+.order-btn .order-btn1, .order-btn .order-btn2{
+	width: 30%;
+	margin: 5px;
+	background-color: #d65106;
+
+}
+.order-btn .order-btn1 a, .order-btn .order-btn2 a
+{
+	font-size: 15px;
+	width: 30%;
+	z-index: 1000;
+}
+
+.logo-box{
+	display: flex;
+	justify-content: center;
+}
+.logo-box img{
+	width: 60px;
+	margin: 20px;
+
+}
+.foter-nav ul, .food-menu .f-menu ul{
+	list-style-type: none;
+}
+.foter-nav ul li, .food-menu .f-menu ul li{
+	display: inline-block;
+}
+.foter-nav ul li a, .food-menu .f-menu ul li a{
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+.food-menu{
+	background-color: #000;
+}
+.food-menu .f-menu{
+	width: 100%
+}
+.food-menu .f-menu ul{
+	margin-top: 150px;
+}
+.food-menu .f-menu ul li a{
+	font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+	background-color: #000;
+	padding:8px 15px;
+}
+.food-menu .f-menu ul li a:hover
+{
+	background-color: #d65106;
+}
+.food-menu .menu-item{
+	display: flex;
+}
+
+.food-menu .img-box img{
+	width: 70%;
+	display: block;
+	margin: auto;
+
+}
+.food-menu .detail h4{
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+}
+.food-menu .detail p{
+	padding: 10px;
+	font-size: 15px;
+}
+.food-menu .add a{
+	color: blue;
+	border: 1px solid blue;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 5px 15px;
+	display: block;
+	width: 150px;
+	margin: auto;
+	background-color: #fff;
+}
+.img-box, .detail, .add{
+	color: #fff;
+	margin-top: 35px;
+	width: 100%;
+}
+.modal-header{
+	background-color: #d65106;
+
+}
+.modal-content .modal-header .modal-title{
+	color: #fff;
+	margin: auto;
+
+}
+.modal-content .modal-body {
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: auto;
+}
+.modal-content .modal-body textarea{
+	width: 100%;
+	height: 10%;
+}

@@ -1,6 +1,6 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
 
+defined('APP_NAME') OR define('APP_NAME', "Kunckles 2 You");
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace
