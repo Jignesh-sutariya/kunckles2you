@@ -169,7 +169,7 @@ class Menu extends MY_Controller {
                 $this->load->library('upload');
 
                 $config = [
-                    'upload_path'      => "images/menus/",
+                    'upload_path'      => "images/menu/",
                     'allowed_types'    => 'jpg|jpeg|png',
                     'file_name'        => random_string('nozero', 5),
                     'file_ext_tolower' => TRUE
