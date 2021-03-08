@@ -1,0 +1,515 @@
+
+
+.search-box{
+	text-align: center;
+}
+.search-box #search-food{
+	padding: 15px;
+	width: 70%;
+	font-size: 20px;
+}
+
+/*.order-btn{
+	display: flex;
+}*/
+.order-btn .order-btn1, .order-btn .order-btn2{
+	width: 30%;
+	margin: 5px;
+	background-color: #d65106;
+
+}
+.order-btn .order-btn1 a, .order-btn .order-btn2 a
+{
+	font-size: 15px;
+	width: 30%;
+	/*z-index: 1000;*/
+}
+
+.logo-box{
+	display: flex;
+	justify-content: center;
+}
+.logo-box img{
+	width: 60px;
+	margin: 20px;
+
+}
+.foter-nav ul, .food-menu .f-menu ul{
+	list-style-type: none;
+}
+.foter-nav ul li, .food-menu .f-menu ul li{
+	display: inline-block;
+}
+.foter-nav ul li a, .food-menu .f-menu ul li a{
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+.food-menu{
+	background-color: #000;
+}
+.food-menu .f-menu{
+	width: 100%
+}
+.food-menu .f-menu ul{
+	margin-top: 150px;
+}
+.food-menu .f-menu ul li a{
+	font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+	background-color: #000;
+	padding:8px 15px;
+}
+.food-menu .f-menu ul li a:hover
+{
+	background-color: #d65106;
+}
+.food-menu .menu-item{
+	display: flex;
+}
+
+.food-menu .img-box img{
+	width: 70%;
+	display: block;
+	margin: auto;
+
+}
+.food-menu .detail h4{
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+}
+.food-menu .detail p{
+	padding: 10px;
+	font-size: 15px;
+}
+.food-menu .add button{
+	color: blue;
+    border: 1px solid blue;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    display: block;
+    width: 60px;
+    margin: auto;
+    background-color: #fff;
+}
+.food-menu .img-box, .food-menu .detail, .food-menu .add{
+	color: #fff;
+	margin-top: 35px;
+	width: 100%;
+}
+.modal-header{
+	background-color: #d65106;
+
+}
+.modal-content .modal-header .modal-title{
+	color: #fff;
+	text-transform: uppercase;
+	margin: auto;
+
+}
+.modal-content .modal-body {
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: auto;
+}
+.modal-content .modal-body textarea{
+	width: 100%;
+	padding: 10px;
+}
+.modal-content .modal-body .date-m, .modal-content .modal-body .time-m{
+	display: flex;
+	margin-top: 15px;
+}
+.modal-content .modal-body .date-m p, 
+.modal-content .modal-body .time-m p
+{
+	margin: 5px!important;
+}
+
+.modal-content .modal-body .date-m select,
+.modal-content .modal-body .time-m select
+{
+	background-color: #efefef;
+	border: none;
+	margin: 5px!important;
+}
+
+.price i{
+	float: right;
+	/*padding: 5px;*/
+	font-size: 25px;
+	/*margin-bottom: 5px;*/
+
+}
+.why-text .price{
+	position: relative;
+}
+
+/*
+.price i .fa{
+	color: #efefef;
+}*/
+#addOrder{
+	
+}
+#addOrder .modal-body .img-box, #bil-info .img-box {
+	width: 100%;
+	margin-top: 35px;
+	height: auto;
+
+}
+#addOrder .modal-body .img-box img{
+	width: 100%;
+}
+ #addOrder .modal-body .detail h4{
+ 	font-size: 20px;
+ 	font-weight: 500;
+ }
+  #addOrder .modal-body .detail p{
+  	font-size: 12px;
+  	color: #000;
+  }
+
+
+#addOrder .modal-body .detail input, #addOrder .modal-body .detailtext {
+  /*border: 1px solid blue;*/
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0px;
+}
+
+#addOrder .modal-body .detail input[type="button"]{
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+#addOrder .modal-body .detail input::-webkit-outer-spin-button,
+#addOrder .modal-body .detail input::-webkit-inner-spin-button
+{
+  -webkit-appearance: none;
+}
+
+#addOrder .modal-body .detail .input-group
+{
+  clear: both;
+  margin: 15px 0;
+  position: relative;
+  border: 1px solid blue;
+}
+
+#addOrder .modal-body .detail .input-group input[type='button']
+{
+  background-color: #fff;
+  min-width: 46px;
+  width: auto;
+  color: blue;
+  transition: all 300ms ease;
+}
+
+#addOrder .modal-body .detail .input-group .button-minus,
+#addOrder .modal-body .detail.input-group .button-plus
+{
+  font-weight: bold;
+  border: none;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+
+#addOrder .modal-body .detail .input-group .quantity-field{
+    position: relative;
+    /*margin: 1px;*/
+    color: #fff;
+    top: 2px;
+    background-color: blue;
+    height: 32px;
+    left: 0px;
+    text-align: center;
+    width: 34px;
+    display: inline-block;
+    font-size: 13px;
+    /*margin: 0px 0 0px;*/
+    resize: vertical;
+}
+
+#addOrder .modal-body .detail .button-plus
+{
+  left: -13px;
+}
+
+#addOrder .modal-body .detail input[type="number"]
+ {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+#addOrder .modal-body .prize-1
+{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+#addOrder .modal-body .prize-1 h4
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d65106;
+}
+
+#addOrder .modal-body .sub-total h4{
+	
+	width: 100%;
+	font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+#addOrder .modal-body .total h4
+{
+	float: right;
+	padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d65106;	
+
+}
+
+#addOrder .modal-body .continue-btn
+{
+	background-color: blue;
+	margin: 10px;
+	color: #fff;
+}
+#addOrder .modal-body .remarks
+{
+	width: 100%;
+
+}
+#addOrder .modal-body .remarks textarea
+{
+	width: 86%!important;
+    height: 10%;
+    margin: 15px;
+	}
+
+.menu-box .heading-title a:hover,
+.gallery-box .heading-title a:hover
+{
+	color: #d65106;
+}
+
+
+.top-navbar .main-logo{
+	width: 100px;
+	height: auto;
+}
+.top-navbar .main-logo img{
+	width: 100%;
+}
+.top-navbar .btn {
+    display: inline-block;
+    font-weight: 400;
+    background-color: transparent;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid transparent;
+    padding: 12px 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: .1875rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.bil-form, #bil-info{
+	margin-top: 250px;
+	width: 100%;
+	margin-bottom: 50px;
+}
+.bil-form input{
+	width: 80%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+#bil-info .detail .input-group {
+    clear: both;
+    margin: 15px 0;
+    position: relative;
+    border: 1px solid blue;
+
+}
+#bil-info .detail{
+	width: 127%;
+}
+#bil-info .img-box img {
+    width: 100%;
+    margin: 10px;
+}
+#bil-info .detail h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+#bil-info .detail p{
+  	font-size: 12px;
+  	color: #000;
+  	margin: 0px;
+  }
+#bil-info .detail input {
+  /*border: 1px solid blue;*/
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0px;
+}
+#bil-info .detail input[type="button"]{
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+#bil-info .detail input::-webkit-inner-spin-button
+{
+  -webkit-appearance: none;
+}
+#bil-info .detail .input-group input[type='button']
+{
+  background-color: #fff;
+  min-width: 32.9%;
+  width: auto;
+  color: blue;
+  transition: all 300ms ease;
+}
+#bil-info .detail .input-group .button-minus,
+#bil-info .detail .input-group .button-plus{
+  font-weight: bold;
+  border: none;
+  height: 30px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+#bil-info .detail .input-group .quantity-field{
+    /*position: relative;*/
+    /*margin: 1px;*/
+    color: #fff;
+    top: 2px;
+    background-color: blue;
+    height: 30px;
+    left: 0px;
+    text-align: center;
+    width: 38px;
+    display: inline-block;
+    font-size: 13px;
+    /*margin: 0px 0 0px;*/
+    /*resize: vertical;*/
+}
+#bil-info .detail .button-plus {
+  left: 0px;
+}
+#bil-info .detail input[type="number"]
+ {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+#bil-info .prize-1
+{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+#bil-info .prize-1 h4
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d65106;
+}
+#bil-info .sub-total h4{
+	
+	width: 100%;
+	font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+#bil-info .total h4{
+	float: right;
+	padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d65106;	
+
+}
+.bill-info .continue-btn{
+	background-color: blue;
+	margin: 10px;
+	color: #fff;
+}
+#bil-info .remarks
+{
+	width: 100%;
+
+}
+#bil-info .remarks textarea
+{
+	width: 86%!important;
+    height: 10%;
+    margin: 15px;
+}
+.bill-info{
+	background-color: #efefef;
+	margin: 20px;
+
+}/*
+.bill-con{
+
+	margin: 20px;	
+}*/
+
+.food-menu .inner-menu-box a{
+  color: #fff;
+}
+
+.food-menu .inner-menu-box .gallery-single {
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 0 #ccc!important;
+    box-shadow: 0 0 0 #ccc!important;
+}
+.quantity-btn{
+  padding: 3%;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.quantity{
+  padding: 3%;
+  border: 1px solid #fff;
+}
+/*.add-button
+{
+  width: 15%!important;
+}
+.minus-button
+{
+  width: 15%!important;
+}
+.plus-button
+{
+  width: 15%!important;
+}*/

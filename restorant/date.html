@@ -1,0 +1,78 @@
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html>
+<head>
+<title>Demo  </title>
+<META NAME="DESCRIPTION" CONTENT=" ">
+<META NAME="KEYWORDS" CONTENT="">
+<script type="text/javascript"> 
+var dt_obj= new Date();
+function addOption(selectbox,text,value )
+{
+	var optn = document.createElement("OPTION");
+	optn.text = text;
+	optn.value = value;
+	selectbox.options.add(optn);
+}
+///////////// date //////////////////
+var today_date= dt_obj.getDate();
+function addOption_list1(){
+for (var i=1; i < 32;++i){
+addOption(document.drop_list.dt_list, i, i);
+if(i== today_date){document.drop_list.dt_list.options[i].selected=true;}
+}
+addOption_list2();
+}
+//////////////End of Date //////////
+
+
+///////////// Month //////////////////
+var current_month=dt_obj.getMonth() +1;
+function addOption_list2(){
+var month = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+for (var i=0; i < month.length;++i){
+addOption(document.drop_list.Month_list, month[i], month[i]);
+if(i== current_month){document.drop_list.Month_list.options[i].selected=true;}
+}
+addOption_list3();
+
+}
+//////////////End of Month //////////
+
+
+///////////// Year //////////////////
+var current_year=dt_obj.getFullYear();
+function addOption_list3(){
+for (var i=0; i < 7;++i){
+var j=current_year+i-2;
+match_year=current_year+i;
+addOption(document.drop_list.year_list, j, j);
+if((j-1)== current_year ){document.drop_list.year_list.options[i].selected=true;}
+}
+
+}
+//////////////End of Year //////////
+
+</script>
+
+
+</head>
+<body onload=addOption_list1();>
+
+<FORM name="drop_list" action="date-projects2ck.php" method="POST" >
+		
+<SELECT  NAME="dt_list">
+<Option value="" >Date</option>
+</SELECT>
+
+<SELECT  NAME="Month_list">
+<Option value="" >Month</option>
+</SELECT>
+
+<SELECT  NAME="year_list">
+<Option value="" >Year</option>
+</SELECT>
+
+<input type=submit value=submit>
+</form>
+</body>
+</html>
