@@ -79,6 +79,13 @@ class Main_model extends CI_Model
 		return $this->db->get_where($table, $where)->num_rows();
 	}
 
+	public function totalIncome()
+	{
+		$total = $this->db->select('SUM(o_total) total')->from('orders')->get()->row_array();
+
+		return ($total['total']) ? $total['total'] : 0; 
+	}
+
 	public function import_excel($data, $table)
 	{
 	  return $this->db->insert_batch($table, $data);

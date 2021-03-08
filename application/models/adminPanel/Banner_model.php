@@ -17,7 +17,7 @@ class Banner_model extends MY_Model
 
 	public function make_query()  
 	{  
-		$this->select_column = ['b.id', ' CONCAT("images/banners/", b.banner) banner'];
+		$this->select_column = ['b.id', 'CONCAT("images/banners/", b.banner) banner'];
         $this->db->select($this->select_column)
             	 ->from($this->table);
 

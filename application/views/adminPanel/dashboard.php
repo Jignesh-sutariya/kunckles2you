@@ -1,72 +1,159 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed') ?>
-<!-- <p>A beautiful plugin, that replace the classic alert, Handcrafted by our friend <a target="_blank" href="https://twitter.com/t4t5" rel="nofollow">Tristan Edwards</a>. Please check out the <a href="https://sweetalert2.github.io/" target="_blank" rel="nofollow">full documentation.</a></p>
-<div class="places-sweet-alerts">
-	<div class="row">
-		<div class="col-md-3">
-			<div class="card ">
-				<div class="card-body text-center">
-					<p class="card-text">Basic example</p>
-					<button class="btn btn-outline-default btn-round" onclick="demo.showSwal('basic')">Try me!</button>
+<div class="row">
+	<div class="col-lg-3 col-md-6 col-sm-6">
+		<div class="card card-stats">
+			<div class="card-body ">
+				<div class="row">
+					<div class="col-5 col-md-4">
+						<div class="icon-big text-center icon-warning">
+							<i class="fa fa-shopping-cart text-warning"></i>
+						</div>
+					</div>
+					<div class="col-7 col-md-8">
+						<div class="numbers">
+							<p class="card-category">Current Orders</p>
+							<p class="card-title"><?= $this->main->count('orders', ['status' => 'In process']) ?></p><p>
+						</p></div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card ">
-				<div class="card-body text-center">
-					<p class="card-text">A title with a text under</p>
-					<button class="btn btn-outline-default btn-round" onclick="demo.showSwal('title-and-text')">Try me!</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card ">
-				<div class="card-body text-center">
-					<p class="card-text">A success message</p>
-					<button class="btn btn-outline-default btn-round" onclick="demo.showSwal('success-message')">Try me!</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card ">
-				<div class="card-body text-center">
-					<p class="card-text">Custom HTML description</p>
-					<button class="btn btn-outline-default btn-round" onclick="demo.showSwal('custom-html')">Try me!</button>
+			<div class="card-footer ">
+				<hr>
+				<div class="stats">
+					<i class="fa fa-calendar-o"></i>
+					As on <?= date('d-m-Y') ?>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-3">
-			<div class="card ">
-				<div class="card-body text-center">
-					<p class="card-text">A warning message, with a function attached to the "Confirm" Button...</p>
-					<button class="btn btn-outline-default btn-round" onclick="demo.showSwal('warning-message-and-confirmation')">Try me!</button>
+	<div class="col-lg-3 col-md-6 col-sm-6">
+		<div class="card card-stats">
+			<div class="card-body ">
+				<div class="row">
+					<div class="col-5 col-md-4">
+						<div class="icon-big text-center icon-warning">
+							<i class="fa fa-shopping-cart text-warning"></i>
+						</div>
+					</div>
+					<div class="col-7 col-md-8">
+						<div class="numbers">
+							<p class="card-category">Total Orders</p>
+							<p class="card-title"><?= $this->main->count('orders', ['status' => 'Completed']) ?></p><p>
+						</p></div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card ">
-				<div class="card-body text-center">
-					<p class="card-text">...and by passing a parameter, you can execute something else for "Cancel"</p>
-					<button class="btn btn-outline-default btn-round" onclick="demo.showSwal('warning-message-and-cancel')">Try me!</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card ">
-				<div class="card-body text-center">
-					<p class="card-text">A message with auto close timer set to 2 seconds</p>
-					<button class="btn btn-outline-default btn-round" onclick="demo.showSwal('auto-close')">Try me!</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card ">
-				<div class="card-body text-center">
-					<p class="card-text">Modal window with input field</p>
-					<button class="btn btn-outline-default btn-round" onclick="demo.showSwal('input-field')">Try me!</button>
+			<div class="card-footer ">
+				<hr>
+				<div class="stats">
+					<i class="fa fa-calendar-o"></i>
+					As on <?= date('d-m-Y') ?>
 				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
+	<div class="col-lg-3 col-md-6 col-sm-6">
+		<div class="card card-stats">
+			<div class="card-body ">
+				<div class="row">
+					<div class="col-5 col-md-4">
+						<div class="icon-big text-center icon-warning">
+							<i class="nc-icon nc-money-coins text-success"></i>
+						</div>
+					</div>
+					<div class="col-7 col-md-8">
+						<div class="numbers">
+							<p class="card-category">Revenue</p>
+							<p class="card-title">$ <?= $this->main->totalIncome() ?></p><p>
+						</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer ">
+				<hr>
+				<div class="stats">
+					<i class="fa fa-calendar-o"></i>
+					As on <?= date('d-m-Y') ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-6 col-sm-6">
+		<div class="card card-stats">
+			<div class="card-body ">
+				<div class="row">
+					<div class="col-5 col-md-4">
+						<div class="icon-big text-center icon-warning">
+							<i class="nc-icon nc-single-copy-04 text-danger"></i>
+						</div>
+					</div>
+					<div class="col-7 col-md-8">
+						<div class="numbers">
+							<p class="card-category">Menu Items</p>
+							<p class="card-title"><?= $this->main->count('menu', ['is_deleted' => 0]) ?></p><p>
+						</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer ">
+				<hr>
+				<div class="stats">
+					<i class="fa fa-calendar-o"></i>
+					As on <?= date('d-m-Y') ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-6 col-sm-6">
+		<div class="card card-stats">
+			<div class="card-body ">
+				<div class="row">
+					<div class="col-5 col-md-4">
+						<div class="icon-big text-center icon-warning">
+							<i class="fa fa-image text-primary"></i>
+						</div>
+					</div>
+					<div class="col-7 col-md-8">
+						<div class="numbers">
+							<p class="card-category">Gallery</p>
+							<p class="card-title"><?= $this->main->count('gallery', ['id != ' => 0]) ?></p><p>
+						</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer ">
+				<hr>
+				<div class="stats">
+					<i class="fa fa-calendar-o"></i>
+					As on <?= date('d-m-Y') ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-6 col-sm-6">
+		<div class="card card-stats">
+			<div class="card-body ">
+				<div class="row">
+					<div class="col-5 col-md-4">
+						<div class="icon-big text-center icon-warning">
+							<i class="fa fa-qrcode text-dark"></i>
+						</div>
+					</div>
+					<div class="col-7 col-md-8">
+						<div class="numbers">
+							<p class="card-category">QR Scans</p>
+							<p class="card-title"><?= $this->main->count('scans', ['id != ' => 0]) ?></p><p>
+						</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer ">
+				<hr>
+				<div class="stats">
+					<i class="fa fa-calendar-o"></i>
+					As on <?= date('d-m-Y') ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

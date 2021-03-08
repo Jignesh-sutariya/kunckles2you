@@ -187,7 +187,7 @@ button:focus{
 	color: #ffffff;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
-	background: #d65106;
+	background: #001b8d;
 	color: #ffffff;
 	border-radius: 4px;
 }
@@ -297,10 +297,10 @@ button:focus{
 
 .cover-slides h1{
 	font-family: 'Rubik', sans-serif;
-	font-weight: 500;
-	font-size: 64px;
+	font-weight: 500!important;
+	font-size: 60px!important;
 	color: #fff;
-	top: 50px!important;
+	margin-top:120px!important;
 }
 .cover-slides p{
 	font-size: 18px;
@@ -747,16 +747,16 @@ button:focus{
 	margin-bottom: 15px;
 }
 .f-social li a {
-    font-size: 22px;
+    font-size: 20px;
     color: rgba(214, 81, 6);
-	width: 38px;
-	height: 38px;
-	display: block;
-	text-align: center;
-	line-height: 38px;
-	background: #ffffff;
-	border-radius: 4px;
-	padding-top: 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    padding-top: 10px;
 }
 
 .copyright{

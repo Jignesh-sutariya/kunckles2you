@@ -53,4 +53,22 @@ class Menu_model extends MY_Model
             $this->db->order_by(key($order), $order[key($order)]);
         }
 	}
+
+    public function getItems($day='')
+    {
+        $day = ($this->input->get('day')) ? $this->input->get('day') : $day;
+        
+        if ($day)
+            return $this->db->select(['m.id', 'm.title'])
+                     ->from($this->table)
+                     ->where(['m.is_deleted' => 0])
+                     ->group_start()
+                     ->like('week_avail', $day)
+                     ->group_end()
+                     ->get()
+                     ->result_array();
+            
+        else
+            return [];
+    }
 }

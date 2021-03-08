@@ -11,7 +11,7 @@
       </ul>
     </div>
     <div class="card-footer">
-      <a href="<?= base_url($url) ?>" class="btn btn-round btn-primary"> Back to home page</a>
+      <a onclick="window.history.back();" class="btn btn-round btn-primary"> Go Back to previous page</a>
     </div>
   </div>
 </div>

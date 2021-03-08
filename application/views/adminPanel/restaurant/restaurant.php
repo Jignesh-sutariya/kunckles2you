@@ -1,15 +1,19 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed') ?>
 <div class="row">
   <div class="col-md-12">
     <div class="card">
       <div class="card-header">
         <div class="row">
-          <div class="col-md-10">
+          <div class="col-md-9">
             <h4 class="card-title">Manage <?= ucwords($title) ?></h4>
+          </div>
+          <div class="col-md-3">
+            <?= anchor($url.'/timings', 'Manage Timings', 'title="Manage Timings" class="btn btn-info btn-round float-right"') ?>
           </div>
         </div>
       </div>
       <div class="card-body">
-        <?= form_open_multipart($url) ?>
+        <?= form_open($url.'/restUpdate') ?>
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div class="form-group">
@@ -41,14 +45,13 @@
           </div>
           <div class="col-md-12 col-sm-12">
             <div class="form-group">
-              <?= form_label('Restaurant Description', 'description', 'class="col-form-label"') ?>
-              <?= form_textarea([
-              'name' => "description",
+              <?= form_label('Restaurant Address', 'address', 'class="col-form-label"') ?>
+              <?= form_input([
+              'name' => "address",
               'class' => "form-control",
-              'id' => "description",
-              'rows' => 10,
-              'placeholder' => "Enter Restaurant Description",
-              'value' => $data['description']
+              'id' => "address",
+              'placeholder' => "Enter Restaurant Address",
+              'value' => $data['address']
               ]) ?>
             </div>
           </div>
@@ -74,7 +77,7 @@
               'name' => "email_id",
               'class' => "form-control",
               'id' => "email_id",
-              'maxlength' => 20,
+              'maxlength' => 255,
               'placeholder' => "Enter Restaurant Email Id",
               'value' => $data['email_id']
               ]) ?>
@@ -88,7 +91,7 @@
               'name' => "facebook",
               'class' => "form-control",
               'id' => "facebook",
-              'maxlength' => 20,
+              'maxlength' => 255,
               'placeholder' => "Enter Facebook link",
               'value' => $data['facebook']
               ]) ?>
@@ -102,7 +105,7 @@
               'name' => "instagram",
               'class' => "form-control",
               'id' => "instagram",
-              'maxlength' => 20,
+              'maxlength' => 255,
               'placeholder' => "Enter Instagram link",
               'value' => $data['instagram']
               ]) ?>

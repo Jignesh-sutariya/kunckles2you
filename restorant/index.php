@@ -4,11 +4,11 @@
     <div id="slides" class="cover-slides">
         <ul class="slides-container">
             <li class="text-left">
-                <img src="images/slider-01.jpg" alt="">
+                <img src="images/slider-02.jpg" alt="">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Knuckles2you<br> Food Truck</strong></h1>
+                            <h1><strong>Knuckles2you<br> Food Truck</strong></h1>
                             
                         </div>
                         <div class="col-md-12">
@@ -26,33 +26,11 @@
                 </div>
             </li>
             <li class="text-left">
-                <img src="images/slider-02.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Knuckles2you<br> Food Truck</strong></h1>
-                            
-                        </div>
-                        <div class="col-md-12">
-                            <div class="search-box">
-                            <input type="text" id="search-food" name="search" placeholder="search your favourite food">
-                            </div>
-                        </div>
-                        <div class="col-md-12 text-center">
-                            <div class="order-btn">
-                            <button type="button" class="btn btn-info btn-lg order-btn1" data-toggle="modal" data-target="#myModal">Order Now</button>
-                            <button type="button" class="btn btn-info btn-lg order-btn2" data-toggle="modal" data-target="#myModal">Pre order</button>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </li>
-            <li class="text-left">
                 <img src="images/slider-03.jpg" alt="">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Knuckles2you<br> Food Truck</strong></h1>
+                            <h1><strong>Knuckles2you<br> Food Truck</strong></h1>
                             
                         </div>
                         <div class="col-md-12">
@@ -62,8 +40,8 @@
                         </div>
                         <div class="col-md-12 text-center">
                             <div class="order-btn">
-                            <button type="button" class="btn btn-info btn-lg order-btn1" data-toggle="modal" data-target="#myModal">Order Now</button>
-                            <button type="button" class="btn btn-info btn-lg order-btn2" data-toggle="modal" data-target="#myModal">Pre order</button>
+                            <button type="button" class="btn btn-info btn-lg order-btn1" data-toggle="modal" data-target="#orderNow">Order Now</button>
+                            <button type="button" class="btn btn-info btn-lg order-btn2" data-toggle="modal" data-target="#preOrder">Pre order</button>
                             </div>
                         </div>
                     </div> 
@@ -103,7 +81,7 @@
                 <div class="col-lg-12">
                     <div class="heading-title text-left">
                         <h2>Our Menu</h2>
-                        <p><a href="#" class="btn">See All dishes</a></p>
+                        <p><a href="#" class="btn">See All dishes &nbsp &nbsp<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
                     </div>
                 </div>
             </div>
@@ -113,8 +91,8 @@
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
                         <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Drinks</a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Lunch</</a>
-                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dinner</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Sreet Menu</</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Tradie Meal Deals</a>
                     </div>
                 </div>
                 
@@ -128,7 +106,8 @@
                                         <div class="why-text">
                                             <h4>Special Drinks 1</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $7.79</h5>
+                                            
+                                            <div class="price"><h5> $7.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -137,9 +116,10 @@
                                     <div class="gallery-single fix">
                                         <img src="images/img-02.jpg" class="img-fluid" alt="Image">
                                         <div class="why-text">
-                                            <h4>Special Drinks 2</h4>
+                                            <h4>Special Drinks 1</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $9.79</h5>
+                                            
+                                            <div class="price"><h5> $8.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -148,9 +128,10 @@
                                     <div class="gallery-single fix">
                                         <img src="images/img-03.jpg" class="img-fluid" alt="Image">
                                         <div class="why-text">
-                                            <h4>Special Drinks 3</h4>
+                                            <h4>Special Drinks 1</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $10.79</h5>
+                                            
+                                            <div class="price"><h5> $10.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -159,9 +140,10 @@
                                     <div class="gallery-single fix">
                                         <img src="images/img-04.jpg" class="img-fluid" alt="Image">
                                         <div class="why-text">
-                                            <h4>Special Lunch 1</h4>
+                                            <h4>Special Lunch</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $15.79</h5>
+                                            
+                                            <div class="price"><h5> $17.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -170,9 +152,10 @@
                                     <div class="gallery-single fix">
                                         <img src="images/img-05.jpg" class="img-fluid" alt="Image">
                                         <div class="why-text">
-                                            <h4>Special Lunch 2</h4>
+                                            <h4>Special Lunch</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $18.79</h5>
+                                            
+                                            <div class="price"><h5> $18.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -181,9 +164,10 @@
                                     <div class="gallery-single fix">
                                         <img src="images/img-06.jpg" class="img-fluid" alt="Image">
                                         <div class="why-text">
-                                            <h4>Special Lunch 3</h4>
+                                            <h4>Special Lunch</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $20.79</h5>
+                                            
+                                            <div class="price"><h5> $19.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -192,9 +176,10 @@
                                     <div class="gallery-single fix">
                                         <img src="images/img-07.jpg" class="img-fluid" alt="Image">
                                         <div class="why-text">
-                                            <h4>Special Dinner 1</h4>
+                                            <h4>Special Dinner</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $25.79</h5>
+                                            
+                                            <div class="price"><h5> $25.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -203,9 +188,10 @@
                                     <div class="gallery-single fix">
                                         <img src="images/img-08.jpg" class="img-fluid" alt="Image">
                                         <div class="why-text">
-                                            <h4>Special Dinner 2</h4>
+                                            <h4>Special Dinner</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $22.79</h5>
+                                            
+                                            <div class="price"><h5> $22.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -214,9 +200,10 @@
                                     <div class="gallery-single fix">
                                         <img src="images/img-09.jpg" class="img-fluid" alt="Image">
                                         <div class="why-text">
-                                            <h4>Special Dinner 3</h4>
+                                            <h4>Special Dinner</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $24.79</h5>
+                                            
+                                            <div class="price"><h5> $25.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -231,7 +218,7 @@
                                         <div class="why-text">
                                             <h4>Special Drinks 1</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $7.79</h5>
+                                            <div class="price"><h5> $7.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -242,7 +229,7 @@
                                         <div class="why-text">
                                             <h4>Special Drinks 2</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $9.79</h5>
+                                            <div class="price"><h5> $9.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -253,7 +240,7 @@
                                         <div class="why-text">
                                             <h4>Special Drinks 3</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $10.79</h5>
+                                            <div class="price"><h5> $10.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -268,7 +255,7 @@
                                         <div class="why-text">
                                             <h4>Special Lunch 1</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $15.79</h5>
+                                            <div class="price"><h5> $15.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -279,7 +266,7 @@
                                         <div class="why-text">
                                             <h4>Special Lunch 2</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $18.79</h5>
+                                            <div class="price"><h5> $18.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -290,7 +277,7 @@
                                         <div class="why-text">
                                             <h4>Special Lunch 3</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $20.79</h5>
+                                            <div class="price"><h5> $20.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -304,7 +291,7 @@
                                         <div class="why-text">
                                             <h4>Special Dinner 1</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $25.79</h5>
+                                            <div class="price"><h5> $25.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -315,7 +302,7 @@
                                         <div class="why-text">
                                             <h4>Special Dinner 2</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $22.79</h5>
+                                            <div class="price"><h5> $25.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -326,7 +313,7 @@
                                         <div class="why-text">
                                             <h4>Special Dinner 3</h4>
                                             <p>Sed id magna vitae eros sagittis euismod.</p>
-                                            <h5> $24.79</h5>
+                                            <div class="price"><h5> $24.79</h5><i class="fa fa-plus-circle" aria-hidden="true"style="color:#d65106"></i></div>
                                         </div>
                                     </div>
                                 </div>
@@ -345,7 +332,7 @@
                 <div class="col-lg-12">
                     <div class="heading-title text-rigt">
                         <h2>Gallery</h2>
-                        <p><a href="#" class="btn">See All photos</a></p>
+                        <p><a href="#" class="btn">See All photos &nbsp &nbsp<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
                     </div>
                 </div>
             </div>
@@ -397,7 +384,7 @@
     </div>
 
 <div class="modal fade" id="orderNow" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog text-center">
     
       <!-- Modal content-->
       <div class="modal-content">
@@ -407,7 +394,7 @@
         </div>
         <div class="modal-body">
           <p>You can pick your order from</p>
-          <textarea placeholder="Address 2" ></textarea>
+          <textarea placeholder="Address 2" rows="5" ></textarea>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -417,17 +404,45 @@
     </div>
 </div>
 <div class="modal fade" id="preOrder" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog text-center">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           
-          <h2 class="modal-title">Order Now</h2>
+          <h2 class="modal-title">pre order</h2>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" onload=addOption_list1();>
+            <FORM name="drop_list" action="" method="POST" >
+                <div class="date-m">
+                    <p>Date</p>
+                        <SELECT  NAME="dt_list">
+                        <Option value="" >Date</option>
+                        </SELECT>
+
+                        <SELECT  NAME="Month_list">
+                        <Option value="" >Month</option>
+                        </SELECT>
+
+                        <SELECT  NAME="year_list">
+                        <Option value="" >Year</option>
+                        </SELECT>
+                </div>
+                <div class="time-m">
+                    <p>Time</p>
+                        <SELECT  NAME="tm_list">
+                        <Option value="" >6:30</option>
+                        </SELECT>
+
+                        <SELECT  NAME="Month_list">
+                            <Option value="" >am</option>
+                            <Option value="" >pm</option>
+                        </SELECT>
+                </div>
+                
+            </form>
           <p>You can pick your order from</p>
-          <textarea placeholder="Address 2" ></textarea>
+          <textarea placeholder="Address 2" rows="5"></textarea>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

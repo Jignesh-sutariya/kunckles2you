@@ -1,4 +1,4 @@
-<?php 
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 function my_crypt($string, $action = 'e' )
 {
@@ -31,6 +31,11 @@ function admin($url='')
     return "adminPanel/$url";
 }
 
+function web($url='')
+{
+    return "web/$url";
+}
+
 function e_id($id)
 {
     return $id * 44545;
@@ -39,6 +44,11 @@ function e_id($id)
 function d_id($id)
 {
     return $id / 44545;
+}
+
+function day()
+{
+    return getdate(time())['weekday'];
 }
 
 function flashMsg($success, $succmsg, $failmsg, $redirect)

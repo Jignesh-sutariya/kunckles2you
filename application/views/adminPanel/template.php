@@ -3,8 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <?= link_tag('images/favicon.png', 'png', 'image/x-icon') ?>
-        <?= link_tag('images/favicon.png', 'icon', 'image/x-icon') ?>
+        <?= link_tag('images/favicon.png', 'shortcut icon', 'image/x-icon') ?>
+        <?= link_tag('images/favicon.png', 'apple-touch-icon') ?>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <title>
         <?= APP_NAME.' | '.ucfirst($title) ?>
@@ -41,10 +41,16 @@
                         </div>
                     </div>
                     <ul class="nav">
-                        <li <?= ($name === 'dashboard') ? 'class="active"' : '' ?>>
+                        <li <?= ($name === 'dashboard' || $name === 'profile') ? 'class="active"' : '' ?>>
                             <a href="<?= base_url(admin()) ?>">
                                 <i class="fa fa-home"></i>
                                 <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li <?= ($name === 'orders') ? 'class="active"' : '' ?>>
+                            <a href="<?= base_url(admin('orders')) ?>">
+                                <i class="fa fa-shopping-cart"></i>
+                                <p>Orders</p>
                             </a>
                         </li>
                         <li <?= ($name === 'restaurant') ? 'class="active"' : '' ?>>
@@ -53,14 +59,14 @@
                                 <p>Restaurant</p>
                             </a>
                         </li>
-                        <li <?= (in_array($name, ['menu', 'category'])) ? 'class="active"' : '' ?>>
-                            <a data-toggle="collapse" href="#manageMenu" aria-expanded="true">
-                                <i class="nc-icon nc-single-copy-04"></i>
+                        <li>
+                            <a data-toggle="collapse" href="#manageMenu" aria-expanded="true" <?= (in_array($name, ['menu', 'category'])) ? 'class="text-info"' : '' ?> >
+                                <i class="nc-icon nc-single-copy-04 <?= (in_array($name, ['menu', 'category'])) ? 'text-info' : '' ?>"></i>
                                 <p>
                                     Manage Menu <b class="caret"></b>
                                 </p>
                             </a>
-                            <div class="collapse <?= (in_array($name, ['menu', 'category'])) ? 'show' : '' ?> " id="manageMenu">
+                            <div class="collapse <?= (in_array($name, ['menu', 'category'])) ? 'show' : '' ?>" id="manageMenu">
                                 <ul class="nav">
                                     <li <?= ($name === 'menu') ? 'class="active"' : '' ?>>
                                         <a href="<?= base_url(admin('menu')) ?>">
@@ -117,13 +123,17 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navigation">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link btn-rotate" href="javascript:;">
-                                        <i class="nc-icon nc-button-power"></i>
-                                        <p>
-                                            <span class="d-lg-none d-md-block">Profile</span>
-                                        </p>
+                                <li class="nav-item btn-rotate dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="profileSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="nc-icon nc-circle-10"></i>
+                                      <p>
+                                        <span class="d-lg-none d-md-block">Profile</span>
+                                      </p>
                                     </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileSettings">
+                                      <a class="dropdown-item" href="<?= base_url(admin('profile')) ?>">Profile</a>
+                                      <a class="dropdown-item" href="<?= base_url(admin('database')) ?>">Download Database</a>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link btn-rotate" href="javascript:;" onclick="script.logout()">
@@ -141,6 +151,19 @@
                     <h5><?= ucwords($title) ?></h5>
                     <?= $contents ?>
                 </div>
+                <footer class="footer footer-black  footer-white ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="credits ml-auto">
+                                <span class="copyright">
+                                    © <script>
+                                    document.write(new Date().getFullYear())
+                                    </script>, made with <i class="fa fa-heart heart"></i> by <a href="https://densetek.com" title="Densetek Infotech" class="text-danger" target="_blank"><b>Densetek Infotech</b></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
         <input type="hidden" id="base_url" value="<?= base_url(admin()) ?>">
@@ -188,6 +211,8 @@
         <script src="<?= base_url('assets/demo/jquery.sharrre.js') ?>"></script>
         <script src="<?= base_url('assets/js/core.js') ?>"></script>
         <script src="<?= base_url('assets/js/script.js') ?>"></script>
+        <script>
+        </script>
         <?php if ($this->session->flashdata('success')): ?>
         <script>
         script.showNotification('top', 'right', "<b>Success</b><br><?= $this->session->flashdata('success') ?>", 'success');

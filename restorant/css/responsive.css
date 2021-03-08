@@ -5,6 +5,19 @@
 	.footer-area h3{
 		font-size: 18px;
 	}
+	.why-text h4{
+		font-size: 13px;
+	}
+	.why-text p{
+		margin: 0px;
+		font-size: 10px;
+	}
+	.why-text h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #001b8d;
+    display: inline-block;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.navbar-light .navbar-brand{
@@ -24,10 +37,11 @@
 		right: -60px;
 	}
 	.why-text h4{
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.why-text p{
 		margin: 0px;
+		font-size: 10px;
 	}
 }
 
@@ -98,20 +112,106 @@
 	line-height: 1.5;
 	border-radius: .1875rem;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	}
+
+	.modal-header{
+	background-color: #d65106;
+
+	}
+	.modal-content .modal-header .modal-title{
+	color: #fff;
+	text-transform: uppercase;
+	margin: auto;
+
+	}
+	.modal-content .modal-body {
+	color: #000;
+	font-size: 19px!important;
+	text-transform: uppercase;
+	margin: auto;
+	}
+	.modal-content .modal-body textarea{
+	width: 85%!important;
+	height: 10%;
+	}
+	#addOrder .modal-body .detail .input-group {
+    clear: both;
+    margin: 15px 0;
+    position: relative;
+    border: 1px solid blue;
+    width: 43%;
 }
-	
+.bil-form{
+    margin-top: 180px!important;
+    width: 90%!important;
+    margin-bottom: 15px!important;
+	}
+	#bil-info {
+	margin-top: 10px!important;
+    width: 90%!important;	
+	}
+	#bil-info .detail .input-group {
+    clear: both;
+    margin: 15px 0;
+    position: relative;
+    border: 1px solid blue;
+    width: 44%;
+}
+.bil-form input {
+    width: 80%!important;
+    padding: 5px!important;
+    margin: 5px!important;
+}
+#bil-info .remarks textarea {
+    width: 94%!important;
+    height: 10%!important;
+    padding: 10px!important;
+    margin: 10px!important;
+}
+#bil-info .detail {
+    width: 100%!important;
+}
 }
 @media only screen and (min-width: 280px) and (max-width: 599px) {
 	
-	.why-text p{
-		margin-bottom: 0px;
-		margin-top: 0px;
-	}
+	
 	.inner-column{
 		margin-bottom: 30px;
 	}
 	.inner-menu-box .nav-pills .nav-link{
 		font-size: 12px;
 		padding: 5px;
+	}
+	.price i {
+    float: right;
+    /* padding: 5px; */
+    font-size: 19px;
+    /* margin-bottom: 5px; */
+	}
+	.why-text h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #001b8d;
+    display: inline-block;
+	}
+	.why-text p {
+    color: #101;
+    font-size: 12px;
+    border-bottom: 1px dashed #010101;
+    margin: 0px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+	}
+	#addOrder .modal-body .detail .input-group {
+    clear: both;
+    margin: 15px 0;
+    position: relative;
+    border: 1px solid blue;
+    width: 43%;
+	}
+	#addOrder .modal-body textarea{
+	width: 86%!important;
+    height: 10%;
 	}
 }

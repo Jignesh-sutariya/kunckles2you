@@ -24,59 +24,31 @@
         </div>
         <div class="full-page-background" style="background-image: url(' <?= base_url('images/fabio-mangione.jpg') ?> ') ">
         </div>
+        <footer class="footer footer-black  footer-white ">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="credits ml-auto">
+                <span class="copyright">
+                  © <script>
+                  document.write(new Date().getFullYear())
+                  </script>, made with <i class="fa fa-heart heart"></i> by <a href="https://densetek.com" title="Densetek Infotech" class="text-danger" target="_blank"><b>Densetek Infotech</b></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
     <script src="<?= base_url('assets/js/core/jquery.min.js') ?>"></script>
     <script src="<?= base_url('assets/js/core/popper.min.js') ?>"></script>
     <script src="<?= base_url('assets/js/core/bootstrap.min.js') ?>"></script>
     <script src="<?= base_url('assets/js/plugins/jquery.validate.min.js') ?>"></script>
+    <script src="<?= base_url('assets/js/plugins/sweetalert2.min.js') ?>"></script>
+    <script src="<?= base_url('assets/js/login.js') ?>"></script>
     <?php if ($this->session->message): ?>
-    <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header justify-content-center">
-            <h4 class="title title-up"><?= $this->session->notify ?></h4>
-          </div>
-          <div class="modal-body text-center">
-            <h5><?= $this->session->message ?></h5>
-          </div>
-          <div class="modal-footer">
-            <div class="left-side">
-              <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Never mind</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <script>
-    $("#messageModal").modal();
+    login.showSwal("<?= $this->session->message ?>", "<?= $this->session->notify ?>");
     </script>
     <?php endif ?>
-      <script>
-      $(document).ready(function() {
-        var input = $("form").first().find(':input').first().attr('id');
-        $("#"+input).focus();
-        $("#LoginValidation").validate({
-          rules: {
-            password: "required",
-            mobile: {
-              required: true,
-              digits: true,
-              minlength: 10,
-              maxlength: 10
-            }
-          },
-          highlight: function(element) {
-            $(element).closest('.input-group').removeClass('has-success').addClass('has-danger');
-          },
-          unhighlight: function(element) {
-            $(element).closest('.input-group').removeClass('has-danger').addClass('has-success');
-          },
-          errorPlacement: function(error, element) {
-            return true;
-          }
-        });
-      });
-    </script>
   </body>
 </html>

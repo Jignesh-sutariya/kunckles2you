@@ -29,7 +29,23 @@ class Menu extends MY_Controller {
             $sub_array[] = $row->title;
             $sub_array[] = $row->price;
             $sub_array[] = $row->name;
-            $sub_array[] = ($row->availability) ? '<a class="btn btn-success btn-link btn-icon btn-sm"><i class="fa fa-thumbs-up"></i></a>' : '<a class="btn btn-danger btn-link btn-icon btn-sm"><i class="fa fa-thumbs-down"></i></a>';
+
+            $avail = form_open($this->redirect.'/availability', 'id="avail_'.e_id($row->id).'"', ['id' => e_id($row->id)]);
+
+            if ($row->availability)
+                $avail .= form_hidden('availability', 0).form_button([ 'content' => '<i class="fa fa-thumbs-up"></i>', 
+                    'type'  => 'button',
+                    'class' => 'btn btn-success btn-link btn-icon btn-sm', 
+                    'onclick' => "script.availability(".e_id($row->id)."); return false;"]);
+            else
+                $avail .= form_hidden('availability', 1).form_button([ 'content' => '<i class="fa fa-thumbs-down"></i>', 
+                    'type'  => 'button',
+                    'class' => 'btn btn-danger btn-link btn-icon btn-sm', 
+                    'onclick' => "script.availability(".e_id($row->id)."); return false;"]);
+            
+            $avail .= form_close();
+            $sub_array[] = $avail;
+
             $sub_array[] = $row->week_avail;
 
             $action = '<div style="display: flex;">';
@@ -195,6 +211,13 @@ class Menu extends MY_Controller {
                 }
             }
         }
+    }
+
+    public function availability()
+    {
+        $id = $this->main->update(['id' => d_id($this->input->post('id'))], ['availability' => $this->input->post('availability')], $this->table);
+
+        flashMsg($id, ucwords($this->title)." status changed successfully.", ucwords($this->title)." status not changed. Try again.", $this->redirect);
     }
 
     public function delete()
